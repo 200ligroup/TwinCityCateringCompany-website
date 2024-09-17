@@ -1,0 +1,986 @@
+<!DOCTYPE html><html lang="zxx"><!--<< Header Area >>--><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="gramentheme">
+    <meta name="description" content="Twin City Catering Company">
+    <title>Twin City Catering Company</title>
+    <link rel="shortcut icon" href="images/img/logo.jpeg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+		.album-container {
+			/* margin-bottom: 20px; */
+			text-align: center;
+		}
+	
+		.gallery-row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	
+		.column {
+			flex: 0 0 calc(30.333%);
+			margin: 8px;
+		}
+	
+		.column a {
+			display: block;
+			overflow: hidden;
+		}
+	
+		.column img {
+			width: 100%;
+			height: auto;
+			max-width: 100%;
+			object-fit: contain;
+			margin: 8px;
+		}
+	
+		@media screen and (max-width: 768px) {
+	
+			.gallery-row {
+				display: block;
+				flex-wrap: wrap;
+			}
+		}
+	
+	
+	
+		.grid-column-layout {
+			display: grid;
+			/* grid-template-columns: 595px 580px; */
+			grid-template-rows: 200px 200px;
+			gap: 16px;
+			/* Add gap between grid items */
+		}
+	
+	
+		.box {
+			/* padding: 5em; */
+			text-align: center;
+			/* border: solid black 1px; */
+		  
+		}
+	
+		/* Define the grid positions for each box */
+		.one {
+			grid-row: 1 / 3;
+			grid-column: 1 / 2;
+		}
+	
+		.two {
+			grid-row: 1 / 2;
+			grid-column: 2 / 3;
+		}
+	
+		.three {
+			grid-row: 2 / 3;
+			grid-column: 2 / 3;
+		}
+	
+		/* layout4 */
+		.grid-column-layout4 {
+			display: grid;
+			/* grid-template-columns: 400px 300px 400px; */
+			/* grid-template-rows: 200px 200px; */
+			gap: 16px 16px;
+			/* Add gap between grid items */
+		}
+	
+		.layout41 {
+			grid-row: 1 / 3;
+			grid-column: 1 / 2;
+		}
+	
+		.layout42 {
+			grid-row: 1 / 2;
+			grid-column: 2 / 3;
+		}
+	
+		.layout43 {
+			grid-row: 2 / 3;
+			grid-column: 2 / 3;
+		}
+	
+		.layout44 {
+			grid-row: 1 / 3;
+			/* Align with the second row */
+			grid-column: 3 / 4;
+		}
+	
+		/*  */
+	
+		/* layout5start */
+	
+		.grid-column-layout5 {
+			display: grid;
+			/* grid-template-columns: 500px 500px; */
+			/* grid-template-rows: 200px 200px; */
+			/* gap: 16px 16px; */
+			/* Add gap between grid items */
+		}
+	
+		/* Define the grid positions for each box */
+		.layout51 {
+			grid-row: 1 / 2;
+			grid-column: 1 / 2;
+		}
+	
+		.layout52 {
+			grid-row: 1 / 2;
+			grid-column: 2 / 3;
+		}
+	
+		.layout53 {
+			grid-row: 2 / 3;
+			grid-column: 1 / 4;
+			/* Changed grid-column to span across all columns */
+		}
+	
+		.layout54 {
+			grid-row: 3 / 4;
+			/* Changed grid-row to be in the second row */
+			grid-column: 1 / 2;
+		}
+	
+		.layout55 {
+			grid-row: 3 / 4;
+			/* Changed grid-row to be in the second row */
+			grid-column: 2 / 3;
+			height: 200px;
+		}
+	
+		/* layout5end */
+	
+		/* layut 6 start */
+		.grid-column-layout6 {
+			display: grid;
+			/* grid-template-columns: 500px 500px; */
+			/* grid-template-rows: 200px 200px; */
+			gap: 16px 16px;
+			/* Add gap between grid items */
+		}
+	
+		/* Define the grid positions for each box */
+		.layout61 {
+			grid-row: 1 / 3;
+			grid-column: 1 / 2;
+		}
+	
+		.layout62 {
+			grid-row: 1 / 2;
+			grid-column: 2 / 3;
+		}
+	
+		.layout63 {
+			grid-row: 2 / 3;
+			grid-column: 2 / 3;
+	
+		}
+	
+		.layout64 {
+			grid-row: 3 / 4;
+			grid-column: 1 / 2;
+			height: 200px;
+	
+		}
+	
+		.layout65 {
+			grid-row: 4 / 5;
+			grid-column: 1 / 2;
+			height: 200px;
+	
+		}
+	
+		.layout66 {
+			grid-row: 3 / 5;
+			grid-column: 2 / 3;
+		}
+	
+		/* layout 6 end */
+	
+		/* layut 7 start */
+		.grid-column-layout7 {
+			display: grid;
+			/* grid-template-columns: 350px 350px 350px; */
+			grid-template-rows: 550px;
+			gap: 16px 16px;
+		}
+	
+		.layout71 {
+			grid-row: 1 / 2;
+			grid-column: 1 / 2;
+		}
+	
+		.layout72 {
+			grid-row: 1 / 2;
+			grid-column: 2 / 3;
+	
+		}
+	
+		.layout73 {
+			grid-row: 1 / 2;
+			grid-column: 3 / 4;
+		}
+	
+	
+		.layout74 {
+			grid-row: 3 / 5;
+			grid-column: 1 / 2;
+	
+		}
+	
+		.layout75 {
+			grid-row: 3 / 4;
+			grid-column: 2 / 3;
+			height: 275px;
+		}
+	
+		.layout76 {
+			grid-row: 3 / 5;
+			grid-column: 3 / 4;
+		}
+	
+		.layout77 {
+			grid-row: 4 / 5;
+			grid-column: 2 / 3;
+			height: 275px;
+		}
+	
+		/* layout 7 end */
+	
+		/* layut 8 start */
+		.grid-column-layout8 {
+			display: grid;
+			/* grid-template-columns: 350px 350px 350px; */
+			gap: 16px 16px;
+		}
+	
+		.layout8a {
+			grid-row: 1 / 3;
+			grid-column: 1 / 2;
+		}
+	
+		.layout8b {
+			grid-row: 1 / 2;
+			grid-column: 2 / 3;
+			height: 275px;
+	
+		}
+	
+		.layout8c {
+			grid-row: 1 / 3;
+			grid-column: 3 / 4;
+		}
+	
+	
+		.layout8d {
+			/* grid-row: 1 / 3; 
+	grid-column: 3 / 4; */
+			grid-row: 2 / 3;
+			grid-column: 2 / 3;
+			height: 275px;
+	
+	
+		}
+	
+		.layout8e {
+			grid-row: 3 / 5;
+			grid-column: 1 / 2;
+	
+		}
+	
+		.layout8f {
+			grid-row: 3 / 4;
+			grid-column: 2 / 3;
+			height: 275px;
+		}
+	
+		.layout8g {
+			grid-row: 3 / 5;
+			grid-column: 3 / 4;
+		}
+	
+		.layout8Eight {
+			grid-row: 4 / 5;
+			grid-column: 2 / 3;
+			height: 275px;
+	
+		}
+	
+		/* layout 8 end */
+		@media screen and (max-width: 768px) {
+			.box {
+	padding:16px;
+	text-align: center;
+	/* border: solid black 1px; */
+	}
+			.grid-column-layout8 {
+		grid-template-rows: auto; /* Auto rows for responsive height */
+		gap: 16px; /* Add gap between grid items */
+		display: block;
+	}
+	
+	.grid-column-layout1 {
+		grid-template-columns: 0fr 0fr; /* Two columns layout */
+		grid-template-rows: auto; /* Auto rows for responsive height */
+		gap: 16px; /* Add gap between grid items */
+		display: block;
+	}
+	.grid-column-layout2 {
+		grid-template-columns: 0fr 0fr; /* Two columns layout */
+		grid-template-rows: auto; /* Auto rows for responsive height */
+		gap: 16px; /* Add gap between grid items */
+		display: block;
+	}
+	.grid-column-layout3 {
+		grid-template-columns: 0fr 0fr; /* Two columns layout */
+		grid-template-rows: auto; /* Auto rows for responsive height */
+		gap: 16px; /* Add gap between grid items */
+		display: block;
+	}
+	.grid-column-layout4 {
+		grid-template-columns: 0fr 0fr; /* Two columns layout */
+		grid-template-rows: auto; /* Auto rows for responsive height */
+		gap: 16px; /* Add gap between grid items */
+		display: block;
+	}
+	.grid-column-layout5 {
+		grid-template-columns: 0fr 0fr; /* Two columns layout */
+		grid-template-rows: auto; /* Auto rows for responsive height */
+		gap: 16px; /* Add gap between grid items */
+		display: block;
+	}
+	.grid-column-layout6 {
+		grid-template-columns: 0fr 0fr; /* Two columns layout */
+		grid-template-rows: auto; /* Auto rows for responsive height */
+		gap: 16px; /* Add gap between grid items */
+		display: block;
+	}
+	.grid-column-layout7 {
+		grid-template-columns: 0fr 0fr; /* Two columns layout */
+		grid-template-rows: auto; /* Auto rows for responsive height */
+		gap: 16px; /* Add gap between grid items */
+		display: block;
+	}
+	.grid-column-layout{
+		grid-template-columns: 0fr 0fr; /* Two columns layout */
+		grid-template-rows: auto; /* Auto rows for responsive height */
+		gap: 16px; /* Add gap between grid items */
+		display: block;
+	}
+	/* Adjust other grid layouts as needed */
+	}
+	</style>
+</head>
+
+<body class="bg-color2">
+
+    <!-- Preloader Start -->
+    
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo text-center" >
+                            <a href="index.html">
+                                <img src="images/img/logo.jpeg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-lg-block">
+                        Twin City Catering Company is the premier catering company in the Twin Cities area, specializing in creating
+                        memorable dining experiences for all types of events. Founded by passionate chef Shanta Faison, Twin City Catering
+                        Company brings a unique blend of flavors, creativity, and professionalism to every catering event.
+                    </p>
+                    
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">635a Peters Creek Pkwy, Winston-Salem , North Carolina</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+013-003-003-9993"><span class="mailto:twincitycateringco@gmail.com">twincitycateringco@gmail.com</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:3369718267">(336) 971-8267</a>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-section">
+        <div class="black-bg"></div>
+        <div class="red-bg"></div>
+        <div class="container-fluid">
+            <div class="main-header-wrapper">
+                <div class="logo-image">
+                    <a href="index.html">
+                        <img src="images/img/logo.jpeg" alt="img" class="img-fluid" height="80" width="150">
+                    </a>
+                </div>
+                <div class="main-header-items">
+                    <div class="header-top-wrapper">
+                        <span><i class="fa-regular fa-clock"></i> 09:00 am - 06:00 pm</span>
+                        <div class="social-icon d-flex align-items-center">
+                            <span>Follow Us:</span>
+                            <a href="https://www.instagram.com/twincitycateringco/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div id="header-sticky" class="header-1">
+                        <div class="mega-menu-wrapper">
+                            <div class="header-main">
+                                <div class="logo">
+                                    <a href="index.html" class="header-logo">
+                                        <img src="images/img/logo.jpeg" alt="logo-img" class="img-fluid" height="80" width="100">
+                                    </a>
+                                </div>
+                                <div class="header-left">
+                                    <div class="mean__menu-wrapper">
+                                        <div class="main-menu">
+                                            <nav id="mobile-menu">
+                                                <ul>
+                                                    <li class="has-dropdown active menu-thumb">
+                                                        <a href="index.html">
+                                                            Home
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-dropdown active d-xl-none">
+                                                        <a href="index.html" class="border-none">
+                                                            Home
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-dropdown">
+                                                        <a href="about.html">
+                                                            About Us
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="associated-venue.html">
+                                                            Associated Venues
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-dropdown">
+                                                        <a href="gallery.html">
+                                                            gallery
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="faq.html">
+                                                            Q & A
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li>
+                                                        <a href="contact-us.html">
+                                                            Contact Us
+                                                            <i class="fa-regular fa-plus"></i>
+                                                        </a>
+                                                      
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-right d-flex justify-content-end align-items-center">
+                                    <div class="header__hamburger d-xl-block my-auto">
+                                        <div class="sidebar__toggle">
+                                            <i class="fas fa-bars"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcumb Section   S T A R T -->
+    <div class="breadcumb-section">
+        <div class="breadcumb-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcumb-content">
+                            <h1 class="breadcumb-title">Gallery</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Gallery Section    S T A R T -->
+    <div class="gallery-section section-padding fix">
+        <div class="container">
+            <div id="albumsContainer"></div>
+
+            <script>
+               const serviceEndpoint2 = 'https://www.bossplatform.com/Franchise/FranchiseServices/GetWebsiteAlbumsDataVendor';
+              async function fetchData() {
+                try {
+                  const postData = {
+                    "VendorNewId": 342,
+                    "Type": "Gallery",
+                    "PublishedImages" :true
+                  };
+                  const response = await fetch(serviceEndpoint2, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(postData),
+                  });
+
+                  const data = await response.json();
+                  generateAlbumsHtml(data);
+                } catch (error) {
+                  console.error('Error fetching data:', error);
+                }
+              }
+              function initializeFancybox() {
+      $('[data-fancybox="gallery"]').fancybox({
+        loop: true, // Enable looping
+        buttons: ["zoom", "slideShow", "fullScreen", "close"], // Show control buttons
+      });
+    }
+
+              function generateAlbumsHtml(albumsData) {
+                var albumsContainer = document.getElementById('albumsContainer');
+                var html = '';
+
+                albumsData.GetAlbumsData.forEach(function (album2) {
+                  html += '  <h2 class="title text-start wow text-center" >' + album2.Title + '</h2>'; // Title added here
+
+                  album2.AlbumImages.forEach(function (album) { 
+                  if (album.TemplateId === 1) {
+                    html += '<div class="block">';
+                    html += '<div style="padding: 20px">';
+                    html += '<div class="row">';
+                    html += '<div style="height: 400px; width: 100%; justify-content: center; text-align: center; align-items: center;">';
+                    html += '<div style="width: 100%; height: 400px; overflow: hidden;">';
+                     // html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/'+album.ImageData[0].FileName + '" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">';
+                     html += '<a href="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + album.ImageData[0].FileName + '" data-fancybox="gallery" " style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">';
+                      html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + album.ImageData[0].FileName + '" loading="lazy" class="lazy-image" style="width: 100%; height: 100%; object-fit: cover;background-image: url(https://ucarecdn.com/faff2888-016b-4c54-9870-25f9a21129f5/-/preview/1600x900/-/blur/500/);">';
+                      html += '</a>';
+                     html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                  } 
+                  else if (album.TemplateId === 2) {
+                    html += '<div class="block">';
+                    html += '<div style="padding:30px ">';
+                    html += '<div class="row">';
+                    album.ImageData.forEach(function (image) {
+                      html += '<div style="height: 400px; width: 100%; justify-content: center; text-align: center; align-items: center;">';
+                      html += '<div style="width: 100%; height: 400px; overflow: hidden;">';
+                       // html += '<img src="'+ 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" loading="lazy">';
+                       html += '<a href="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" data-fancybox="gallery" " style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" loading="lazy">';
+                      html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" loading="lazy" class="lazy-image" style="width: 100%; height: 100%; object-fit: cover;background-image: url(https://ucarecdn.com/faff2888-016b-4c54-9870-25f9a21129f5/-/preview/1600x900/-/blur/500/);">';
+                      html += '</a>';
+                       html += '</div>';
+                      html += '</div>';
+                    });
+                    html += '</div>';
+                    html += '</div>';
+
+                    html += '</div>';
+                    html += '</div>';
+                  }
+                  else if (album.TemplateId === 3) {
+                    html += '<div class="block" ng-show="TemplateId==\'3\'">';
+                      
+                    html += '<div style="padding: 20px">';
+                    html += '<div class="row">';
+                    html += '<div class="grid-column-layout">';
+
+                    album.ImageData.forEach(function (image, index) {
+                      html += '<div class="' + (index % 3 === 0 ? 'one' : index % 3 === 1 ? 'two' : 'three') + ' box">';
+                      html += '<div style="width: 100%; height: ' + (index === 0 ? '415px' : '200px') + '; overflow: hidden;">';
+                       // html += '<img src="'+ 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" loading="lazy">';
+                       html += '<a href="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" data-fancybox="gallery" " style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" loading="lazy">';
+                      html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" loading="lazy" class="lazy-image" style="width: 100%; height: 100%; object-fit: cover;background-image: url(https://ucarecdn.com/faff2888-016b-4c54-9870-25f9a21129f5/-/preview/1600x900/-/blur/500/);">';
+                      html += '</a>';
+                       html += '</div>';
+                      html += '</div>';
+                    });
+
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                  }
+                   
+                  else if (album.TemplateId === 4) {
+                    html += '<div class="" ng-show="TemplateId==\'4\'">';
+                    html += '<div style="padding: 20px;">';
+                    html += '<div class="row">';
+                    html += '<div class="grid-column-layout8">';
+
+                    // Loop through each image in the album
+                    album.ImageData.forEach(function (image, index) {
+                      var imageIndex = index + 1;
+
+                      var boxClass = 'layout8' + (imageIndex === 8 ? 'Eight' : String.fromCharCode(96 + imageIndex)) + ' box';
+                      var displayImageVariable = 'displayimage' + imageIndex;
+
+                      html += '<div class="' + boxClass + '">';
+                      html += '<div ng-show="' + displayImageVariable + '" style="width: 100%; height: ' + (imageIndex % 2 === 0 ? '275px' : '565px') + '; overflow: hidden;">';
+                      html += '<a href="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" data-fancybox="gallery" " style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" loading="lazy">';
+                      html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" class="lazy-image" style="width: 100%; height: 100%; object-fit: cover;background-image: url(https://ucarecdn.com/faff2888-016b-4c54-9870-25f9a21129f5/-/preview/1600x900/-/blur/500/);">';
+                      html += '</a>';
+                      html += '</div>';
+                      html += '</div>';
+                    });
+
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                  }
+                  
+                  else if (album.TemplateId === 5) {
+
+                    html += '<div class="block" ng-show="TemplateId==\'5\'">';
+                    html += '<div style="padding: 20px">';
+                    html += '<div class="row">';
+                    html += '<div class="grid-column-layout5">';
+
+                    album.ImageData.forEach(function (image, index) {
+
+
+                      html += '<div class="layout5' + (index + 1) + ' box">';
+                      html += '<div style="width: 100%; height: ' + (index == 1 || index == 2 || index == 3 || index == 0 ? '550px' : index == 5 ? '550px' : '550px') + '; overflow: hidden;padding:8px;">';
+                       // html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" loading="lazy">';
+                       html += '<a href="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" data-fancybox="gallery" " style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" loading="lazy">';
+                      html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" loading="lazy" class="lazy-image" style="width: 100%; height: 100%; object-fit: cover;background-image: url(https://ucarecdn.com/faff2888-016b-4c54-9870-25f9a21129f5/-/preview/1600x900/-/blur/500/);">';
+                      html += '</a>';
+                       html += '</div>';
+                      html += '</div>';
+                    });
+
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                  }
+                  else if (album.TemplateId === 6) {
+                    html += '<div class="block" ng-show="TemplateId==\'6\'">';
+                    html += '<div style="padding: 20px">';
+                    html += '<div class="row">';
+                    html += '<div class="grid-column-layout6">';
+
+                      album.ImageData.forEach(function (image, index) {
+                      html += '<div class="layout6' + (index + 1) + ' box">';
+                      html += '<div style="width: 100%; height: ' + (index == 0 || index == 5 ? '415px' : '200px') + '; overflow: hidden;">';
+                       // html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/'+ image.FileName + '" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">';
+                       html += '<a href="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" data-fancybox="gallery" " style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">';
+                      html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" loading="lazy" class="lazy-image" style="width: 100%; height: 100%; object-fit: cover;background-image: url(https://ucarecdn.com/faff2888-016b-4c54-9870-25f9a21129f5/-/preview/1600x900/-/blur/500/);">';
+                      html += '</a>';
+                       html += '</div>';
+                      html += '</div>';
+                    });
+
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                  }
+                  else if (album.TemplateId === 7) {
+
+                    html += '<div class="block" ng-show="TemplateId==\'7\'">';
+                    html += '<div style="padding: 20px">';
+                    html += '<div class="row">';
+                    html += '<div class="grid-column-layout7">';
+
+                      album.ImageData.forEach(function (image, index) {
+
+
+                      html += '<div class="layout7' + (index + 1) + ' box">';
+                      html += '<div style="width: 100%; height: ' + (index == 1 || index == 2 || index == 3 || index == 0 ? '565px' : index == 5 ? '565px' : '275px') + '; overflow: hidden;">';
+                       // html += '<img src="'+ 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">';
+                       html += '<a href="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" data-fancybox="gallery" " style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">';
+                      html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" loading="lazy" class="lazy-image" style="width: 100%; height: 100%; object-fit: cover;background-image: url(https://ucarecdn.com/faff2888-016b-4c54-9870-25f9a21129f5/-/preview/1600x900/-/blur/500/);">';
+                      html += '</a>';
+                       html += '</div>';
+                      html += '</div>';
+                    });
+
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                  }
+                  else if (album.TemplateId === 8) {
+                    html += '<div class="" ng-show="TemplateId==\'8\'">';
+                    html += '<div style="padding: 20px;">';
+                    html += '<div class="row">';
+                    html += '<div class="grid-column-layout8">';
+
+                    // Loop through each image in the album
+                    album.ImageData.forEach(function (image, index) {
+                      var imageIndex = index + 1;
+
+                      var boxClass = 'layout8' + (imageIndex === 8 ? 'Eight' : String.fromCharCode(96 + imageIndex)) + ' box';
+                      var displayImageVariable = 'displayimage' + imageIndex;
+
+                      html += '<div class="' + boxClass + '">';
+                      html += '<div ng-show="' + displayImageVariable + '" style="width: 100%; height: ' + (imageIndex % 2 === 0 ? '275px' : '565px') + '; overflow: hidden;">';
+                      //  html += '<img src="'+ 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">';
+                      html += '<a href="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" data-fancybox="gallery" " style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">';
+                      html += '<img src="' + 'https://www.bossplatform.com/BellaCollinaServices/ExternalWebsite/' + image.FileName + '" loading="lazy" class="lazy-image" style="width: 100%; height: 100%; object-fit: cover;background-image: url(https://ucarecdn.com/faff2888-016b-4c54-9870-25f9a21129f5/-/preview/1600x900/-/blur/500/);">';
+                      html += '</a>';
+                      html += '</div>';
+                      html += '</div>';
+                    });
+
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                  }
+                });
+                html += '</div>';
+
+                });
+
+                albumsContainer.innerHTML = html;
+      initializeFancybox();
+                 
+              }
+
+              // Call the function to generate HTML
+              // generateAlbumsHtml(albumsData);
+              document.addEventListener('DOMContentLoaded', fetchData);
+            </script>
+        </div>
+    </div>
+
+    <!-- Footer Section    S T A R T -->
+    <footer class="footer-section bg-title fix">
+        <div class="footer-widgets-wrapper">
+            <div class="shape1 float-bob-y d-none d-xxl-block"><img src="images/footerShape1_1.png" alt="shape"></div>
+            <div class="shape2 d-none d-xxl-block"><img src="images/footerShape1_2.png" alt="shape"></div>
+            <div class="shape3 d-none d-xxl-block"><img src="images/footerShape1_3.png" alt="shape"></div>
+            <div class="shape4  d-none d-xxl-block"><img src="images/footerShape1_4.png" alt="shape"></div>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row gy-4">
+                        <div class="col-lg-4">
+                            <div class="fancy-box">
+                                <div class="item1"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="item2">
+                                    <h6>address</h6>
+                                    <p>635a Peters Creek Pkwy, Winston-Salem , North Carolina </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-start justify-content-lg-end">
+                            <div class="fancy-box">
+                                <div class="item1"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="item2">
+                                    <h6>send email</h6>
+                                    <p>twincitycateringco@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-start justify-content-lg-end">
+                            <div class="fancy-box">
+                                <div class="item1"><i class="fa-regular fa-phone-volume"></i></div>
+                                <div class="item2">
+                                    <h6>call </h6>
+                                    <p>(336) 971-8267</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <a href="index.html">
+                                    <img src="images/img/logo.jpeg" alt="logo-img" class="img-fluid" width="140">
+                                </a>
+                            </div>
+                            <div class="footer-content">
+                                <p>Twin City Catering Company is the premier catering company in the Twin Cities area, specializing in creating memorable dining experiences for all types of events. </p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <ul class="list-area">
+                                <li>
+                                    <a href="about.html">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="gallery.html">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        Our Gallery
+                                    </a>
+                                </li>
+                               
+                                <li>
+                                    <a href="faq.html">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        FAQ’S
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                    <div class="col-xl-4 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h3>Contact Us</h3>
+                            </div>
+                            <ul class="list-area">
+                                <li class="mb-2">
+                                    Monday – Friday: <span class="text-theme-color2"> 8am – 4pm </span>
+                                </li>
+                                <li>
+                                    Saturday: <span class="text-theme-color2"> 8am – 12am </span>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-wrapper text-center">
+                    <p class="wow fadeInLeft" data-wow-delay=".3s">
+                        © 2024 Powered by BOSS. All Rights Reserved.
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--<< All JS Plugins >>-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="js/viewport.jquery.js"></script>
+    <!--<< Magnific popup Js >>-->
+    <script src="js/magnific-popup.min.js"></script>
+    <!--<< Tilt Js >>-->
+    <script src="js/tilt.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="js/wow.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="js/nice-select.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="js/main.js"></script>
+
+
+</body></html>
