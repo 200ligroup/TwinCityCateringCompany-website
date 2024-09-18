@@ -1716,10 +1716,10 @@ textarea.form-control:focus {
 .section-title .sub-title {
   color: var(--theme2);
   font-family: "Epilogue", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 35px;
   text-transform: uppercase;
 }
 .section-title .title {
@@ -1734,8 +1734,8 @@ textarea.form-control:focus {
 }
 @media (max-width: 767px) {
   .section-title .title {
-    font-size: 65px;
-    line-height: 80px;
+    font-size: 30px;
+    line-height: 45px;
   }
 }
 .section-title .text {
@@ -4604,10 +4604,28 @@ input.main-search-input::placeholder {
 .footer-top .fancy-box .item2 p {
   color: var(--white);
   font-family: var(--title-font);
-  font-size: 20px;
+  font-size: 20px; /* Default size for larger screens */
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+/* Media query for small devices */
+@media (max-width: 600px) { /* Adjust the max-width as needed */
+  .footer-top .fancy-box .item2 p {
+    font-size: 16px; /* Smaller font size for small devices */
+    line-height: 1.4; /* Adjust line height if necessary */
+  }
+  .footer-top {
+    padding: 30px 10px;
+    background: var(--theme2);
+    margin-bottom: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
 }
 
 .footer-widgets-wrapper {
@@ -5150,16 +5168,28 @@ input.main-search-input::placeholder {
   border: 1px solid rgba(235, 0, 41, 0.25);
   background: var(--bg2);
 }
+
 .contact-box.style1 .title {
   color: var(--title);
   text-align: center;
   font-family: var(--title-font);
-  font-size: 24px;
+  font-size: 24px; /* Default size for larger screens */
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
   text-transform: capitalize;
   margin-bottom: 10px;
+}
+
+/* Media query for small devices */
+@media (max-width: 600px) { /* Adjust the max-width as needed */
+  .contact-box.style1 .title {
+    font-size: 14px; /* Smaller font size for small devices */
+    line-height: 26px; /* Adjust line height if necessary */
+    margin-bottom: 8px; /* Adjust margin if necessary */
+    text-align: center;
+
+  }
 }
 .contact-box.style1 p {
   color: var(--text);
