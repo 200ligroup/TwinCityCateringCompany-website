@@ -13,8 +13,15 @@
     <link rel="stylesheet" href="css/meanmenu.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main1.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    
+  
 
 </head>
 
@@ -230,178 +237,179 @@
 
 
     <!-- Contact Us Section    S T A R T -->
-    <div class="contact-us-section section-padding fix">
-        <div class="contact-box-wrapper style1">
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-md-6 col-xl-4">
-                        <div class="contact-box style1">
-                            <div class="contact-icon"><img src="images/location.png" alt="icon"></div>
-                            <h3 class="title">Our Address</h3>
-                            <p>2929 Hedrick Mill Rd. Lexington, NC 27292</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <div class="contact-box style1">
-                            <div class="contact-icon"><img src="images/gmail.png" alt="icon"></div>
-                            <h3 class="title" style="text-transform: lowercase;">twincitycateringco@gmail.com</h3 >
-                            <p>Email us any time!<br>&nbsp; </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <div class="contact-box style1">
-                            <div class="contact-icon"><img src="images/phone.png" alt="icon"></div>
-                            <h3 class="title">(336) 971-8267</h3>
-                            <p>Give us a call!<br>&nbsp;</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+  
 
     <!-- Contact Form Section    S T A R T -->
-    <div class="contact-form-section section-padding pt-0 fix">
-        <div class="contact-form-wrapper style2">
-            <div class="container">
-                <div class="row gx-60 gy-5">
-                    <div class="col-xl-6">
-                        <div class="contact-form-thumb">
-                            <img src="images/img/93d37938-8328-4e7d-bc3c-061074bdd967~sc_1524.jpg" alt="thumb" style="border-top-right-radius: 100px;border-bottom-right-radius: 100px;">
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="contact-form style2">
-                            <h2>Get in Touch</h2>
-                            <form class="row" id="form_Contact">
-                                <div class="col-md-6">
-                                    <input type="text"  name="txt_FirstName" id="txt_FirstName"
-                                    placeholder="First Name" value="">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text"  name="txt_LastName" id="txt_LastName"
-										placeholder="Last Name" value="">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="date"  id="WeddingDAte">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text"  placeholder="Email" id="txt_Email" maxlength="200">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" class="phone" id="txt_DaytimePhone" placeholder="Daytime Phone "
-                                    onkeypress='return isNumberKey(event)' maxlength="10">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" class="phone" id="txt_EveningPhone"
-                                    onkeypress='return isNumberKey(event)' maxlength="10" placeholder="Evening Phone">
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="message"  name="billing_address_1" id="txt_Questions" placeholder="Let us know how we can help!" rows="3" class="form-control"></textarea>
-                                </div>
-                                <div class="col-md-6 form-group mb-0">
-                                    <button class="theme-btn w-100"onclick="return wstxSubmitForm(this);" id="wstForm_Contact_Submit">Submit</button>
-                                </div>
-                                <div class="col-md-6 form-group mb-0">
-                                    <button class="theme-btn w-100" onclick="return resetForm(this);" id="">Reset</button>
-                                </div>
-                                
-                            </form>
-                            <div id="snackbar">Some text some message..</div>
+    
+    <form id="form_Contact" name="Contact Form" class="form-horizontal form-bordered">
+        <div class="col-md-6 col-md-offset-3" style="padding-bottom: 75px !important;" >
+            <div class="text-center">
+                <font face="Monotype Corsiva, Apple Chancery, cursive" style="font-size: 24px; color:#656565">Please
+                    feel free to fill out this form, we will contact you back as soon as possible</font>
+            </div><br>
 
-                            <script>
 
-                                $('.phone').on('input', function () {
-                                    var number = $(this).val().replace(/[^\d]/g, '')
-                                    if (number.length == 7) {
-                                        number = number.replace(/(\d{3})(\d{4})/, "$1-$2");
-                                    } else if (number.length == 10) {
-                                        number = number.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
-                                    }
-                                    $(this).val(number)
-                                });
-        
-                                function isNumberKey(evt) {
-                                    var a = [];
-                                    var k = evt.which;
-                                    for (i = 8; i < 58; i++)
-                                        a.push(i);
-                                    if (!(a.indexOf(k) >= 0))
-                                        evt.preventDefault();
-                                }
-        
-                                function isEmail(email) {
-                                    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-                                    return regex.test(email)
-                                        ;
-                                }
-        
-                                function validateAndDisplayWarning(element, warningId, warningMessage) {
-        
-                                    // Clear existing warnings
-                                    $("#" + warningId).text("");
-        
-                                    // Validate and display warnings
-                                    if ($(element).val() === "" || $(element).val() === "-1" || $(element).val() === null || $(element).val() === undefined) {
-                                        $("#" + warningId).text(warningMessage);
-                                        myFunction("Please fill all required fields.");
-                                        return false;
-                                    }
-                                    if ($("#WeddingDAte").val()=="") {
-                                            $("#WeddingDAte").text("Please select your weddding date");
-                                            myFunction("Please select your weddding date");
-                                            return false;
-                                    }
-        
-                                    if ($("#txt_DaytimePhone").val().length < 10) {
-        
-                                        $("#warning_day_phone").text("Please enter a valid day time phone number");
-                                        myFunction("Please enter a valid day time phone number");
-        
-                                        return false;
-                                    }
-                                    if ($("#txt_EveningPhone").val().length < 10) {
-        
-                                        $("#warning_evening_phone").text("Please enter a valid evening time phone number");
-                                        myFunction("Please enter a valid evening time phone number");
-        
-                                        return false;
-                                    }
-        
-        
-                                    if ($("#txt_Email").val().length > 0) {
-                                        var ValidEmail = isEmail($("#txt_Email").val());
-                                        if (ValidEmail == false) {
-                                            $("#warning_email").text("Please enter a valid email address");
-                                            myFunction("Please enter a valid email address");
-        
-                                            return false;
-                                        }
-        
-        
-                                    }
-        
-                                    return true;
-                                }
-        
-                                function myFunction(message) {
-                                    var snackbar = document.getElementById("snackbar");
-                                    if (snackbar) {
-                                        snackbar.textContent = message;
-                                        snackbar.classList.add("show");
-                                        setTimeout(function () {
-                                            snackbar.classList.remove("show");
-                                        }, 3000);
-                                    }
-                                }
-                                function resetForm() {
-            // Get the form element
+
+            <div class="form-group">
+                <label class="col-md-3 control-label">First Name</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="txt_FirstName" maxlength="100">
+                    <span id="warning_first_name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Last Name</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="txt_LastName" maxlength="100">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Event Date</label>
+                <div class="col-md-7">
+                    <input type="date" class="form-control" id="WeddingDAte" onkeypress='return isNumberKey(event)'
+                        maxlength="5">
+                    <span id="warning_zip_code" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-3 control-label">Daytime Phone</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control phone" id="txt_DaytimePhone"
+                        onkeypress='return isNumberKey(event)' maxlength="10">
+                    <span id="warning_day_phone" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Evening Phone</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control phone" id="txt_EveningPhone"
+                        onkeypress='return isNumberKey(event)' maxlength="10">
+                    <span id="warning_evening_phone" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Email Address:</label>
+                <div class="col-md-7">
+                    <input type="email" class="form-control" id="txt_Email" maxlength="200">
+                    <span id="warning_email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Any questions on your mind:</label>
+                <div class="col-md-7">
+                    <textarea type="textarea" class="form-control" id="billing_address_1"></textarea>
+
+                </div>
+            </div>
+       
+
+            <div class="text-center">
+                <button type="button" onclick="return wstxSubmitForm(this);" id="wstForm_Contact_Submit"
+                    class="btn btn-success btn-md">Submit</button>
+                <button type="reset" onclick="return resetForm(this);" class="btn btn-default btn-md">Reset</button>
+            </div>
+        </div>
+    </form>
+    <style>
+        .control-label {
+            font-weight: normal;
+            color: #656565
+        }
+    </style>
+    <script>
+         var web = "Twincitycateringco.com";
+      
+
+        $('.phone').on('input', function () {
+            var number = $(this).val().replace(/[^\d]/g,' ')
+            if (number.length == 7) {
+                number = number.replace(/(\d{3})(\d{4})/, "$1-$2");
+            } else if (number.length == 10) {
+                number = number.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+            }
+            $(this).val(number)
+        });
+
+        function isNumberKey(evt) {
+            var a = [];
+            var k = evt.which;
+            for (i = 8; i < 58; i++)
+                a.push(i);
+            if (!(a.indexOf(k) >= 0))
+                evt.preventDefault();
+        }
+
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+
+        function validateAndDisplayWarning(element, warningId, warningMessage) {
+            // Clear existing warnings
+            $("#" + warningId).text("");
+
+            // Validate and display warnings
+            if ($(element).val() === "" || $(element).val() === "-1" || $(element).val() === null || $(element).val() === undefined) {
+                $("#" + warningId).text(warningMessage);
+                myFunction("Please fill all required fields.");
+                return false;
+            }
+            if ($("#WeddingDAte").val() == "") {
+                $("#WeddingDAte").text("Please select your weddding date");
+                myFunction("Please select your event date");
+                return false;
+            }
+
+            if ($("#txt_DaytimePhone").val().length < 10) {
+
+                $("#warning_day_phone").text("Please enter a valid day time phone number");
+                myFunction("Please enter a valid day time phone number");
+
+                return false;
+            }
+            if ($("#txt_EveningPhone").val().length < 10) {
+
+                $("#warning_evening_phone").text("Please enter a valid evening time phone number");
+                myFunction("Please enter a valid evening time phone number");
+
+                return false;
+            }
+
+
+            if ($("#txt_Email").val().length > 0) {
+                var ValidEmail = isEmail($("#txt_Email").val());
+                if (ValidEmail == false) {
+                    $("#warning_email").text("Please enter a valid email address");
+                    myFunction("Please enter a valid email address");
+
+                    return false;
+                }
+
+
+            }
+
+            return true;
+        }
+
+        function myFunction(message) {
+            var snackbar = document.getElementById("snackbar");
+            if (snackbar) {
+                snackbar.textContent = message;
+                snackbar.classList.add("show");
+                setTimeout(function () {
+                    snackbar.classList.remove("show");
+                }, 3000);
+            }
+        }
+        function resetForm() {
+         
             var form = document.getElementById('form_Contact');
-            // Loop through each form element and reset its value
+           
             var elements = form.elements;
             for (var i = 0; i < elements.length; i++) {
-                // Check if the element is an input, select, or textarea
+              
                 var element = elements[i];
                 var elementType = element.type.toLowerCase();
                 if (elementType == "text" || elementType == "email" || elementType == "number" || elementType == "password" ||
@@ -411,99 +419,103 @@
                     element.checked = false; // Uncheck checkboxes and radio buttons
                 }
             }
-            
+
         }
-                                function wstxSubmitForm() {
-                                    // alert('hello')
-        
-                                    var isValid = true;
-        
-                                    // Validate and display warnings for each field
-                                    isValid = validateAndDisplayWarning("#txt_FirstName", "txt_FirstName", "Please fill in your first name") && isValid;
-                                    isValid = validateAndDisplayWarning("#WeddingDAte", "WeddingDAte", "Please select your weddding date") && isValid;
-        
-                                    isValid = validateAndDisplayWarning("#txt_DaytimePhone", "warning_day_phone", "Please fill in your daytime phone number") && isValid;
-                                    isValid = validateAndDisplayWarning("#txt_EveningPhone", "warning_evening_phone", "Please fill in your evening time phone") && isValid;
-                                    isValid = validateAndDisplayWarning("#txt_Email", "warning_email", "Please fill in your email address") && isValid;
-        
-                                    // if(!isValid){
-                                    //     myFunction("Please fill in all required fields.");
-        
-                                    // }
-                                    // alert(isValid)
-        
-                                    if (isValid) {
-        
-                                        $("#wstForm_Contact_Submit").attr('disabled', 'disabled');
-                                        var data = {
-                                            "Address": "",
-                                            "City": "",
-                                            "Code": "2929",
-                                            "DayPhone": $("#txt_DaytimePhone").val(),
-                                            "DesiredEventDate": $("#WeddingDAte").val(),
-                                            "Email": $("#txt_Email").val(),
-                                            "EveningPhone": $("#txt_EveningPhone").val(),
-                                            "FirstName": $("#txt_FirstName").val(),
-                                            "LastName": $("#txt_LastName").val(),
-                                            "NoOfGuests": 0,
-                                            "Questions": $("#txt_Questions").val(),
-                                            "SourceReferral": "Other",
-                                            "State": "",
-                                            "YouAre": "",
-                                            "Zip": "",
-                                            "EventType": -1,
-                                            "VendorNewId":342
-                                        };
-                                        console.log(JSON.stringify(data, undefined, 2));
-        
-                                        var servicePath = "https://bossplatform.com/LeadServices/LeadService/AddLeadForVendor";
-                                        $.ajax({
-                                            type: "POST",
-                                            url: servicePath,
-                                            data: JSON.stringify(data),
-                                            contentType: "application/json; charset=utf-8",
-                                            dataType: "json",
-                                            processData: true,
-                                            success: function (data, status, jqXHR) {
-                                                console.log(data);
-                                                if (data.Status == 'Success') {
-                                                    alert("Thank you, a representative will be in touch shortly!");
-                                                    resetForm()
-                                                    $("#wstForm_Contact_Submit").attr('disabled', false);
-                                                }
-                                                else {
-                                                    $("#wstForm_Contact_Submit").attr('disabled', false);
-                                                    console.log("else");
-                                                    alert(data.Message);
-        
-                                                }
-                                            },
-                                            error: function (e) {
-                                                $("#wstForm_Contact_Submit").attr('disabled', false);
-                                                console.log("error");
-                                                console.log(e);
-                                            }
-                                        });
-                                    }
-        
-                                    return false;
-                                }
-        
-        
-        
-        
-        
-                            </script>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
+        function wstxSubmitForm() {
+
+
+            var isValid = true;
+
+            isValid = validateAndDisplayWarning("#txt_FirstName", "txt_FirstName", "Please fill in your first name") && isValid;
+            isValid = validateAndDisplayWarning("#WeddingDAte", "WeddingDAte", "Please select your weddding date") && isValid;
+            isValid = validateAndDisplayWarning("#txt_DaytimePhone", "warning_day_phone", "Please fill in your daytime phone number") && isValid;
+            isValid = validateAndDisplayWarning("#txt_EveningPhone", "warning_evening_phone", "Please fill in your evening time phone") && isValid;
+            isValid = validateAndDisplayWarning("#txt_Email", "warning_email", "Please fill in your email address") && isValid;
+
+
+
+
+            if (isValid) {
+
+
+                $("#wstForm_Contact_Submit").attr('disabled', 'disabled');
+                var data = {
+                    "Address": "",
+                    "City": "",
+                    "Code": "148",
+                    "DayPhone": $("#txt_DaytimePhone").val(),
+                    "DesiredEventDate": $("#WeddingDAte").val(),
+                    "Email": $("#txt_Email").val(),
+                    "EveningPhone": $("#txt_EveningPhone").val(),
+                    "FirstName": $("#txt_FirstName").val(),
+                    "LastName": $("#txt_LastName").val(),
+                    "NoOfGuests": 0,
+                    "Questions": $("#txt_Questions").val(),
+                    "SourceReferral": "Other",
+                    "State": "",
+                    "YouAre": "",
+                    "Zip": "",
+                    "EventType": -1,
+                    "VendorNewId": 342
+                };
+                console.log(JSON.stringify(data, undefined, 2));
+
+                var servicePath = "https://bossplatform.com/LeadServices/LeadService/AddLeadForVendor";
+                $.ajax({
+                    type: "POST",
+                    url: servicePath,
+                    data: JSON.stringify(data),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    processData: true,
+                    success: function (data, status, jqXHR) {
+                        console.log(data);
+                        if (data.Status == 'Success') {
+                            alert("Thank you, a representative will be in touch shortly!");
+                            var frm = document.getElementsByName('Contact Form')[0];
+                            frm.reset();  // Reset all form data
+                              if(web != "")
+              {
+              location.href = web;
+              }
+                        }
+                        else {
+                            $("#wstForm_Contact_Submit").attr('disabled', false);
+                           
+                            alert(data.Message);
+
+                        }
+                    },
+                    error: function (e) {
+                        $("#wstForm_Contact_Submit").attr('disabled', false);
+                        console.log("error");
+                        console.log(e);
+                    }
+                });
+            }
+
+            return false;
+        }
+       
+
+    </script>
+    
+
+
+
+
+
+
+
+
+
 
     <!-- Map Section    S T A R T -->
     <div class="map-wrapper" style="line-height: 0;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.414197031359!2d-80.25654!3d36.08339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8853ae352533b329%3A0xc7f8e81e1382fa61!2s635a%20Peters%20Creek%20Pkwy%2C%20Winston-Salem%2C%20NC%2027103%2C%20USA!5e0!3m2!1sen!2sin!4v1726567464746!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.54413913753!2d-80.17908039999999!3d35.7620078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88539c0f9ff76bad%3A0x8695a0b0f6146b5a!2s2929%20Hedrick%20Mill%20Rd%2C%20Lexington%2C%20NC%2027292!5e0!3m2!1sen!2sus!4v1741700267506!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- Footer Section    S T A R T -->
@@ -653,4 +665,5 @@ by BOSS Cybernetics. All Rights Reserved.
     <script src="js/main.js"></script>
 
 
-</body></html>
+</body>
+</html>

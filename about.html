@@ -14,7 +14,17 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/main.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    
+    <style>.swiper-wrapper {
+        display: flex;
+        transition: transform 0.3s ease; /* Needed for sliding effect */
+      }
+      .swiper-slide {
+        width: 100%; /* Should be set to take full width of the slider */
+      }</style>
+
+      </head>
 
 <body class="bg-color2">
 
@@ -363,59 +373,118 @@
 
     <!-- Testimonial Section    S T A R T -->
     <section class="testimonial-section fix bg-color3">
-        <div class="testimonial-wrapper style1 section-padding ">
-            <div class="shape"><img src="images/testimonialThumb1_1.png" alt="thumb"></div>
-            <div class="shape2"><img src="images/testimonialShape1_1.png" alt="shape"></div>
+        <div class="testimonial-wrapper style1 section-padding">
+            <div class="shape">
+                <img src="images/testimonialThumb1_1.png" alt="thumb">
+            </div>
+            <div class="shape2">
+                <img src="images/testimonialShape1_1.png" alt="shape">
+            </div>
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-5 d-flex align-items-center justify-content-center">
-                      
+                        <!-- Optional content such as branding or decoration can be added here -->
                     </div>
                     <div class="col-xl-7">
-                        <div class="title-area">
-                            <div class="sub-title text-center wow fadeInUp" data-wow-delay="0.5s">
-                                <img class="me-1" src="images/titleIcon.svg" alt="icon">Testimonials<img class="ms-1" src="images/titleIcon.svg" alt="icon">
+                        <!-- Title Section -->
+                        <div class="title-area text-center">
+                            <div class="sub-title wow fadeInUp" data-wow-delay="0.5s">
+                                <img class="me-1" src="images/titleIcon.svg" alt="icon">Testimonials
+                                <img class="ms-1" src="images/titleIcon.svg" alt="icon">
                             </div>
                             <h2 class="title text-white wow fadeInUp" data-wow-delay="0.7s">
                                 What our Clients Say
                             </h2>
                         </div>
+    
+                        <!-- Swiper Slider Section -->
                         <div class="slider-area">
                             <div class="swiper testmonialSliderOne">
                                 <div class="swiper-wrapper">
-                                    <div class="">
+    
+                                    <!-- Testimonial 1 -->
+                                    <div class="swiper-slide">
                                         <div class="testimonial-card style1">
                                             <div class="testimonial-header">
-                                                <div class="fancy-box">
-                                                    <div class="item1"><img src="images/placeholder-male.jpg" alt="thumb"></div>
+                                                <div class="fancy-box d-flex">
+                                                    <div class="item1">
+                                                        <img src="images/placeholder-male.jpg" alt="Client Image">
+                                                    </div>
                                                     <div class="item2">
                                                         <h6>Veronica Smith</h6>
                                                         <p>Administrative Assistant</p>
-
-                                                        <div class="icon"><img src="images/star.svg" alt="icon"></div>
+                                                        
                                                     </div>
-                                                    <div class="quote"><img src="images/quote.svg" alt="icon">
+                                                    <div class="quote">
+                                                        <img src="images/quote.svg" alt="Quote Icon">
                                                     </div>
                                                 </div>
-                                                
                                             </div>
-                                            <p>As a philanthropic organization, it is very important for us to make sure that we create equitable consideration for how we spend our dollars. We were intentional about selecting Twin City Catering Company due to it being a minority owned business here in Winston Salem. It just so happens to be the icing on the cake that we made the right choice as alongside being dependable, having an excellent mindset for setup and delivery, the food happens to also be DELICIOUS! I highly recommend utilizing Twin City Catering for your catering needs! </p>
+                                            <p>
+                                                As a philanthropic organization, it is very important for us to make sure that we create equitable consideration for how we spend our dollars. We were intentional about selecting Twin City Catering Company due to it being a minority owned business here in Winston Salem. It just so happens to be the icing on the cake that we made the right choice as alongside being dependable, having an excellent mindset for setup and delivery, the food happens to also be DELICIOUS! I highly recommend utilizing Twin City Catering for your catering needs!
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Testimonial 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card style1">
+                                            <div class="testimonial-header">
+                                                <div class="fancy-box d-flex">
+                                                    <div class="item1">
+                                                        <img src="images/placeholder-male.jpg" alt="Client Image">
+                                                    </div>
+                                                    <div class="item2">
+                                                        <h6>Patricia Degraffinreidt</h6>
+                                                        <p>Event Manager</p>
+                                                        
+                                                    </div>
+                                                    <div class="quote">
+                                                        <img src="images/quote.svg" alt="Quote Icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Chef Shanta Faison, who has prepared meals for hundreds of groups at The Enterprise Conference and Event Center in Winston-Salem for the past nine (9) years, is the definition of a true chef! She brought her uniqueness, passion for food preparation, creativity, and simply good ole’ fashion delicious cooking to our venue in 2015. Chef Shanta is one of our most requested chefs for events and deservedly so! She continues to exhibit high quality and wonderful food presentations to each group she serves. Chef Shanta is an exemplary chef with a great professional staff! She loves making people happy through the love she shares in her food! What a culinary artist! This chef will always – and continue to be a member of the S.G. Atkins Community Development and Enterprise Center family! For great food dishes and flavors, you MUST call Twin City Caterers – we do!!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card style1">
+                                            <div class="testimonial-header">
+                                                <div class="fancy-box d-flex">
+                                                    <div class="item1">
+                                                        <img src="images/placeholder-male.jpg" alt="Client Image">
+                                                    </div>
+                                                    <div class="item2">
+                                                        <h6>Linda J. Barns</h6>
+                                                        <p>Event Manager</p>
+                                                    
+                                                    </div>
+                                                    <div class="quote">
+                                                        <img src="images/quote.svg" alt="Quote Icon">
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <p>Twin-City Catering’s beautiful presentation and delicious food was the reason we had a wonderful 
+                                                    and successful 2024 International Black Theater Festival brunch for our TN, GA family and local friends. Fantastic job! 
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
+    
+                                <!-- Slider Pagination and Navigation Controls -->
+                                <!--<div class="swiper-pagination"></div>
+                                <div class="arrow-prev"><i class="fa-regular fa-arrow-left"></i></div>
+                                <div class="arrow-next"><i class="fa-regular fa-arrow-right"></i></div>-->
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-            <!-- <div class="btn-wrap">
-                <div class="arrow-prev"><i class="fa-regular fa-arrow-left"></i></div>
-                <div class="arrow-next"><i class="fa-regular fa-arrow-right"></i></div>
-            </div> -->
         </div>
-       
     </section>
+    
 
     <!-- Footer Section    S T A R T -->
     <footer class="footer-section bg-title fix">
@@ -539,7 +608,26 @@ by BOSS Cybernetics. All Rights Reserved.
 
 
 
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var swiper = new Swiper('.testmonialSliderOne', {
+            loop: true,
+            spaceBetween: 30,
+            navigation: {
+              nextEl: '.arrow-next',
+              prevEl: '.arrow-prev',
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            autoplay: {
+              delay: 5000,
+            },
+          });
+        });
+      </script>
+      
     <!--<< All JS Plugins >>-->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!--<< Bootstrap Js >>-->
@@ -564,6 +652,11 @@ by BOSS Cybernetics. All Rights Reserved.
     <script src="js/nice-select.min.js"></script>
     <!--<< Main.js >>-->
     <script src="js/main.js"></script>
+    <!-- Swiper CSS -->
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
 
 </body></html>
